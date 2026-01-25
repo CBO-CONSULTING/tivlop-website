@@ -303,3 +303,4 @@ thebrave.io, 9840732, RESELLER, c25b2154543746ac
 appnexus.com, 15629, RESELLER
 appnexus.com, 15349, RESELLER, f5ab79cb980f11d1
 zmaticoo.com, 5135063, RESELLER
+facebook.com, 2208450979682855, DIRECT, c3e20eee3f780d68
