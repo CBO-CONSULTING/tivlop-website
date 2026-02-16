@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tivlop.com/sitemap.xml
+Sitemap: https://tivlop.com/sitemap.xml
