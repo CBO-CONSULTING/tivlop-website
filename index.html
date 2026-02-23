@@ -55,6 +55,9 @@
             "Custom QR code creator",
             "Works offline",
             "No account needed"
+        ],
+        "sameAs": [
+            "https://www.facebook.com/people/Tivlop/61588636138272/"
         ]
     }
     </script>
@@ -408,6 +411,65 @@
             max-width: 500px;
         }
 
+        /* === PROMISES SECTION === */
+        .promises {
+            position: relative;
+            z-index: 1;
+            padding: 100px 32px 60px;
+        }
+
+        .promises-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .promises-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .promise-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 32px;
+            border: 1px solid rgba(11, 19, 84, 0.04);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .promise-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(11, 19, 84, 0.08);
+        }
+
+        .promise-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 24px;
+        }
+
+        .promise-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .promise-card p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* === USE CASES === */
         .usecases {
             position: relative;
             z-index: 1;
@@ -442,6 +504,61 @@
             transform: scale(1.05);
         }
 
+        /* === TRUST SIGNALS === */
+        .trust-signals {
+            position: relative;
+            z-index: 1;
+            padding: 100px 32px 40px;
+        }
+
+        .trust-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 32px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(11, 19, 84, 0.04);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(11, 19, 84, 0.08);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        /* === SHOWCASE === */
         .showcase {
             position: relative;
             z-index: 1;
@@ -538,59 +655,7 @@
             color: var(--deep-navy);
         }
 
-        .trust-signals {
-            position: relative;
-            z-index: 1;
-            padding: 100px 32px 40px;
-        }
-
-        .trust-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .trust-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        .feature-card {
-            background: white;
-            border-radius: 20px;
-            padding: 32px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid rgba(11, 19, 84, 0.04);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(11, 19, 84, 0.08);
-        }
-
-        .feature-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-        }
-
-        .feature-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .feature-card p {
-            font-size: 0.9rem;
-            color: var(--muted);
-            line-height: 1.5;
-        }
-
+        /* === STORY === */
         .story {
             position: relative;
             z-index: 1;
@@ -625,6 +690,7 @@
             margin: 0 auto;
         }
 
+        /* === CTA === */
         .cta {
             position: relative;
             z-index: 1;
@@ -689,6 +755,7 @@
             color: var(--mint);
         }
 
+        /* === FOOTER === */
         footer {
             position: relative;
             z-index: 1;
@@ -696,6 +763,10 @@
             padding: 40px 32px;
             color: var(--light-muted);
             font-size: 0.85rem;
+        }
+
+        footer p {
+            margin-bottom: 12px;
         }
 
         footer a {
@@ -707,6 +778,38 @@
             color: var(--warm-orange);
         }
 
+        .footer-social {
+            margin-top: 12px;
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(11, 19, 84, 0.06);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .footer-social a:hover {
+            background: rgba(255, 107, 53, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .footer-social a svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--muted);
+            transition: fill 0.2s;
+        }
+
+        .footer-social a:hover svg {
+            fill: var(--warm-orange);
+        }
+
+        /* === ANIMATIONS === */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -729,6 +832,7 @@
             transform: translateY(0);
         }
 
+        /* === MOBILE === */
         @media (max-width: 768px) {
             .hero-inner {
                 grid-template-columns: 1fr;
@@ -764,6 +868,10 @@
             .phone-frame {
                 width: 240px;
                 height: 480px;
+            }
+
+            .promises-grid {
+                grid-template-columns: 1fr;
             }
 
             .cta-inner {
@@ -835,14 +943,15 @@
         <div class="nav-inner">
             <a href="#" class="nav-logo">Tivlop</a>
             <div class="nav-links">
-                <a href="#trust">Features</a>
-                <a href="#showcase">Showcase</a>
+                <a href="#promises">Why Tivlop</a>
+                <a href="#showcase">Features</a>
                 <a href="#story">Our Story</a>
                 <a href="#download" class="nav-cta">Download</a>
             </div>
         </div>
     </nav>
 
+    <!-- ==================== HERO ==================== -->
     <section class="hero">
         <div class="hero-inner">
             <div class="hero-text">
@@ -873,6 +982,7 @@
         </div>
     </section>
 
+    <!-- ==================== PILLS ==================== -->
     <section class="usecases fade-in" id="usecases">
         <div class="usecases-inner">
             <div class="section-label">One app for all of this</div>
@@ -892,9 +1002,35 @@
         </div>
     </section>
 
+    <!-- ==================== PROMISES (privacy, offline, no account) ==================== -->
+    <section class="promises fade-in" id="promises">
+        <div class="promises-inner">
+            <div class="section-label">Why Tivlop</div>
+            <h2 class="section-title" style="margin: 0 auto 60px; text-align: center;">Your cards. Your phone. That's it.</h2>
+            <div class="promises-grid">
+                <div class="promise-card">
+                    <div class="promise-icon" style="background: rgba(155, 89, 182, 0.1);">🔒</div>
+                    <h3>Stored on your device</h3>
+                    <p>Your cards never leave your phone. No cloud, no servers, no third parties. Everything lives in local storage that only you can access.</p>
+                </div>
+                <div class="promise-card">
+                    <div class="promise-icon" style="background: rgba(46, 196, 182, 0.1);">👤</div>
+                    <h3>No account needed</h3>
+                    <p>No email, no password, no sign-up screen. Open the app and start scanning. Your identity is none of our business.</p>
+                </div>
+                <div class="promise-card">
+                    <div class="promise-icon" style="background: rgba(255, 107, 53, 0.1);">✈️</div>
+                    <h3>Works without internet</h3>
+                    <p>Standing at checkout with no signal? No problem. Every card loads instantly from local storage, even in airplane mode.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES (smaller cards) ==================== -->
     <section class="trust-signals fade-in" id="trust">
         <div class="trust-inner">
-            <div class="section-label">Why Tivlop</div>
+            <div class="section-label">The details</div>
             <h2 class="section-title">Built for people who scan things</h2>
             <div class="trust-grid">
                 <div class="feature-card">
@@ -903,24 +1039,26 @@
                     <p>Your cards look proper with pre-loaded logos and brand colours for Carrefour, IKEA, H&M, Decathlon, and more.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon" style="background: rgba(255, 209, 102, 0.15); color: #c9960c;">✈️</div>
-                    <h3>Works offline</h3>
-                    <p>No internet? No problem. All your cards are stored locally on your device and scan at checkout without a connection.</p>
+                    <div class="feature-icon" style="background: rgba(255, 209, 102, 0.15); color: #c9960c;">📦</div>
+                    <h3>Import & export</h3>
+                    <p>Switching phones? Export your entire wallet as a backup and import it on your new device. No account required.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon" style="background: rgba(155, 89, 182, 0.1); color: #9b59b6;">🔒</div>
-                    <h3>Privacy first</h3>
-                    <p>No account needed. No tracking. No shopping data collected. Your cards, your phone, that's it.</p>
+                    <div class="feature-icon" style="background: rgba(78, 124, 255, 0.1); color: var(--soft-blue);">📸</div>
+                    <h3>OCR scanner</h3>
+                    <p>Point your camera at a business card and let Tivlop extract names, numbers, and emails automatically.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ==================== SHOWCASE (5 features) ==================== -->
     <section class="showcase" id="showcase">
         <div class="showcase-inner">
             <div class="section-label">See it in action</div>
             <h2 class="section-title">Every feature, up close</h2>
 
+            <!-- 1. Store & Loyalty Cards -->
             <div class="showcase-row fade-in">
                 <div class="showcase-visual">
                     <div class="showcase-phone">
@@ -944,30 +1082,8 @@
                 </div>
             </div>
 
+            <!-- 2. Tickets -->
             <div class="showcase-row reverse fade-in">
-                <div class="showcase-visual">
-                    <div class="showcase-phone">
-                        <div class="phone-glow" style="background: radial-gradient(circle, rgba(255, 209, 102, 0.15), transparent 70%);"></div>
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <img src="ss-gift-card.png" alt="Gift card tracking screen" onerror="this.parentElement.style.background='linear-gradient(135deg, #4a3800, #7a6200)'; this.style.display='none';">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(255, 209, 102, 0.15); color: #c9960c;">2</div>
-                    <h3>Gift Cards</h3>
-                    <p>Never forget a gift card balance again. Track remaining value, PIN codes, and expiration dates all from one screen.</p>
-                    <div class="showcase-tags">
-                        <span class="showcase-tag">Balance tracking</span>
-                        <span class="showcase-tag">PIN storage</span>
-                        <span class="showcase-tag">Expiry alerts</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="showcase-row fade-in">
                 <div class="showcase-visual">
                     <div class="showcase-phone">
                         <div class="phone-glow" style="background: radial-gradient(circle, rgba(155, 89, 182, 0.15), transparent 70%);"></div>
@@ -979,7 +1095,7 @@
                     </div>
                 </div>
                 <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(155, 89, 182, 0.12); color: #9b59b6;">3</div>
+                    <div class="showcase-number" style="background: rgba(155, 89, 182, 0.12); color: #9b59b6;">2</div>
                     <h3>Tickets</h3>
                     <p>Store boarding passes, concert tickets, train passes, and sports event entries. All scannable, all offline, all in one place.</p>
                     <div class="showcase-tags">
@@ -991,7 +1107,8 @@
                 </div>
             </div>
 
-            <div class="showcase-row reverse fade-in">
+            <!-- 3. Business Cards -->
+            <div class="showcase-row fade-in">
                 <div class="showcase-visual">
                     <div class="showcase-phone">
                         <div class="phone-glow" style="background: radial-gradient(circle, rgba(255, 107, 53, 0.15), transparent 70%);"></div>
@@ -1003,7 +1120,7 @@
                     </div>
                 </div>
                 <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(255, 107, 53, 0.12); color: var(--warm-orange);">4</div>
+                    <div class="showcase-number" style="background: rgba(255, 107, 53, 0.12); color: var(--warm-orange);">3</div>
                     <h3>Business Cards</h3>
                     <p>Scan a paper card and let OCR extract the contacts. Or create your own digital vCard with your name, logo, photo, and details. One scan adds you straight to their phone.</p>
                     <div class="showcase-tags">
@@ -1015,7 +1132,8 @@
                 </div>
             </div>
 
-            <div class="showcase-row fade-in">
+            <!-- 4. Website QR Codes -->
+            <div class="showcase-row reverse fade-in">
                 <div class="showcase-visual">
                     <div class="showcase-phone">
                         <div class="phone-glow" style="background: radial-gradient(circle, rgba(78, 124, 255, 0.15), transparent 70%);"></div>
@@ -1027,7 +1145,7 @@
                     </div>
                 </div>
                 <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(78, 124, 255, 0.12); color: var(--soft-blue);">5</div>
+                    <div class="showcase-number" style="background: rgba(78, 124, 255, 0.12); color: var(--soft-blue);">4</div>
                     <h3>Website QR Codes</h3>
                     <p>Create branded QR codes for any URL. Customize colours, dot shapes, and embed your own logo. Perfect for business cards, posters, or packaging.</p>
                     <div class="showcase-tags">
@@ -1038,75 +1156,7 @@
                 </div>
             </div>
 
-            <div class="showcase-row reverse fade-in">
-                <div class="showcase-visual">
-                    <div class="showcase-phone">
-                        <div class="phone-glow" style="background: radial-gradient(circle, rgba(255, 51, 102, 0.15), transparent 70%);"></div>
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <img src="ss-calendar.png" alt="Calendar events screen" onerror="this.parentElement.style.background='linear-gradient(135deg, #4a0a1a, #7a1a3a)'; this.style.display='none';">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(255, 51, 102, 0.12); color: var(--coral);">6</div>
-                    <h3>Calendar Events</h3>
-                    <p>Import events from your calendar and share them as scannable QR codes. Great for sending invites that add straight to someone's calendar.</p>
-                    <div class="showcase-tags">
-                        <span class="showcase-tag">Calendar import</span>
-                        <span class="showcase-tag">QR sharing</span>
-                        <span class="showcase-tag">Easy invites</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="showcase-row fade-in">
-                <div class="showcase-visual">
-                    <div class="showcase-phone">
-                        <div class="phone-glow" style="background: radial-gradient(circle, rgba(46, 196, 182, 0.15), transparent 70%);"></div>
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <img src="ss-maps.png" alt="Maps and locations screen" onerror="this.parentElement.style.background='linear-gradient(135deg, #0d3b35, #1a6b5a)'; this.style.display='none';">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(46, 196, 182, 0.12); color: var(--mint);">7</div>
-                    <h3>Maps & Locations</h3>
-                    <p>Save map coordinates and directions as QR codes. Perfect for road trips, meetup spots, or sharing your favourite places with friends.</p>
-                    <div class="showcase-tags">
-                        <span class="showcase-tag">Save coordinates</span>
-                        <span class="showcase-tag">Road trip ready</span>
-                        <span class="showcase-tag">Share locations</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="showcase-row reverse fade-in">
-                <div class="showcase-visual">
-                    <div class="showcase-phone">
-                        <div class="phone-glow" style="background: radial-gradient(circle, rgba(78, 124, 255, 0.15), transparent 70%);"></div>
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <img src="ss-invoice.png" alt="Invoice management screen" onerror="this.parentElement.style.background='linear-gradient(135deg, #0a1a4a, #1a2a6a)'; this.style.display='none';">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(78, 124, 255, 0.12); color: var(--soft-blue);">8</div>
-                    <h3>Invoices</h3>
-                    <p>Scan invoice QR codes and keep track of amounts, due dates, and payment status. Everything at a glance so you never miss a payment.</p>
-                    <div class="showcase-tags">
-                        <span class="showcase-tag">Amount tracking</span>
-                        <span class="showcase-tag">Due dates</span>
-                        <span class="showcase-tag">Payment status</span>
-                    </div>
-                </div>
-            </div>
-
+            <!-- 5. Sharing & Export -->
             <div class="showcase-row fade-in">
                 <div class="showcase-visual">
                     <div class="showcase-phone">
@@ -1119,7 +1169,7 @@
                     </div>
                 </div>
                 <div class="showcase-text">
-                    <div class="showcase-number" style="background: rgba(255, 107, 53, 0.12); color: var(--warm-orange);">9</div>
+                    <div class="showcase-number" style="background: rgba(255, 107, 53, 0.12); color: var(--warm-orange);">5</div>
                     <h3>Sharing & Export</h3>
                     <p>Share any card as a beautiful image, export to PDF, or create a full JSON backup of your wallet. Your data, your way.</p>
                     <div class="showcase-tags">
@@ -1132,6 +1182,7 @@
         </div>
     </section>
 
+    <!-- ==================== STORY ==================== -->
     <section class="story fade-in" id="story">
         <div class="story-inner">
             <div class="section-label">The story</div>
@@ -1140,6 +1191,7 @@
         </div>
     </section>
 
+    <!-- ==================== CTA ==================== -->
     <section class="cta fade-in" id="download">
         <div class="cta-inner">
             <h2>Scan anything.<br>Lose nothing.</h2>
@@ -1155,15 +1207,21 @@
                 </a>
             </div>
             <div class="selling-points">
-                <span class="selling-point">Works offline</span>
+                <span class="selling-point">100% local storage</span>
                 <span class="selling-point">No account needed</span>
-                <span class="selling-point">100% free</span>
+                <span class="selling-point">Works offline</span>
             </div>
         </div>
     </section>
 
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>Made with care in Brussels &nbsp;·&nbsp; <a href="mailto:support@tivlop.com">support@tivlop.com</a> &nbsp;·&nbsp; <a href="https://cbo-consulting.github.io/tivlop-privacy-policy/">Privacy Policy</a></p>
+        <p>Made with care in Brussels &nbsp;&middot;&nbsp; <a href="mailto:support@tivlop.com">support@tivlop.com</a> &nbsp;&middot;&nbsp; <a href="https://cbo-consulting.github.io/tivlop-privacy-policy/">Privacy Policy</a></p>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Tivlop/61588636138272/" target="_blank" aria-label="Tivlop on Facebook">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+        </div>
     </footer>
 
     <script>
